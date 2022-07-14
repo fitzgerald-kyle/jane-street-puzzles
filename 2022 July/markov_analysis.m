@@ -117,4 +117,4 @@ for k = 1:maxSteps
     totProb = totProb + totkPaths(k)*(1/3)^k;
 end
 
-probMoreThanSoccerExpected = 1-totProb;  % final answer!
+probMoreThanSoccerExpected = round(1-totProb, 7);  % final answer!
